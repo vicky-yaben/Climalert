@@ -14,4 +14,6 @@ public interface ClimaService {
     List<Clima> obtenerHistorial();
 
     List<Clima> obtenerClimasNoProcesados();
+
+    Clima obtenerYGuardarClimaActual();
 }

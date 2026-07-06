@@ -1,3 +1,8 @@
 spring:
   application:
     name: demo
+
+weatherapi:
+  base-url: http://api.weatherapi.com/v1
+  key: 7a96019a63934c469ba170434260607
+  ubicacion: Buenos Aires
