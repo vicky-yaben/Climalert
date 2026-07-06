@@ -16,7 +16,7 @@ public class ClimaScheduler {
         this.climaService = climaService;
     }
 
-    @Scheduled(fixedRate = 10000)
+    @Scheduled(fixedRate = 300000)
     public void obtenerClimaCadaCincoMinutos() {
         Clima clima = new Clima();
 
