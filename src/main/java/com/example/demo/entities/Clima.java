@@ -14,6 +14,8 @@ public class Clima {
     private String pais;
 
     private Double temperaturaCelsius;
+    private Double velocidadVientoKmh;
+    private Double TemperaturaFahrenheit;
     private Integer humedad;
     private String condicion;
 

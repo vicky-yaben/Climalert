@@ -2,6 +2,7 @@ package com.example.demo.services.impl;
 
 import com.example.demo.entities.Clima;
 import com.example.demo.repositories.ClimaRepository;
+import com.example.demo.services.ClimaService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -29,5 +30,10 @@ public class ClimaServiceImpl implements ClimaService {
     @Override
     public List<Clima> obtenerHistorial() {
         return climaRepository.buscarTodos();
+    }
+
+    @Override
+    public List<Clima> obtenerClimasNoProcesados() {
+        return climaRepository.buscarNoProcesados();
     }
 }

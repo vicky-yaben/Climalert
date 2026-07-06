@@ -1,4 +1,4 @@
-package com.example.demo.services.impl;
+package com.example.demo.services;
 
 import com.example.demo.entities.Clima;
 
@@ -12,4 +12,6 @@ public interface ClimaService {
     Optional<Clima> obtenerUltimoClima();
 
     List<Clima> obtenerHistorial();
+
+    List<Clima> obtenerClimasNoProcesados();
 }
