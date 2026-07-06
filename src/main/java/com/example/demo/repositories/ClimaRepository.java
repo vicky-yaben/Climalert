@@ -33,4 +33,10 @@ public class ClimaRepository {
 
         return Optional.of(historial.get(historial.size() - 1));
     }
+
+    public List<Clima> buscarNoProcesados() {
+        return historial.stream()
+                .filter(clima -> !clima.isProcesado())
+                .toList();
+    }
 }
